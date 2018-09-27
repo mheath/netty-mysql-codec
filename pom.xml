@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.mheath</groupId>
+	<artifactId>netty-codec-mysql-parent</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Netty MySQL Codec Parent</name>
+	<description>A Netty codec for the MySQL/MariaDB protocol</description>
+	<url>https://github.com/mheath/netty-codec-mysql</url>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<junit.version>5.1.0</junit.version>
+		<netty.version>4.1.3.Final</netty.version>
+		<assertj.version>3.5.2</assertj.version>
+	</properties>
+
+	<modules>
+		<module>codec</module>
+		<module>examples</module>
+	</modules>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.github.mheath</groupId>
+				<artifactId>netty-codec-mysql</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-codec</artifactId>
+				<version>${netty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hamcrest</groupId>
+				<artifactId>hamcrest-library</artifactId>
+				<version>1.3</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.assertj</groupId>
+				<artifactId>assertj-core</artifactId>
+				<version>${assertj.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>scm:git:https://github.com/cloudfoundry-community/java-nats.git</url>
+		<connection>scm:git:https://github.com/cloudfoundry-community/java-nats</connection>
+		<developerConnection>scm:git:https://github.com/cloudfoundry-community/java-nats</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>Mike Heath</name>
+			<email>mheath@pivotal.io</email>
+		</developer>
+	</developers>
+
+</project>

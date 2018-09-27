@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<parent>
+		<groupId>com.github.mheath</groupId>
+		<artifactId>netty-codec-mysql-parent</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>netty-codec-mysql-examples</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Netty MySQL Codec Examples</name>
+	<description>Examples for using the MySQL Netty Codec</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.mheath</groupId>
+			<artifactId>netty-codec-mysql</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
