@@ -1,15 +1,6 @@
-#Netty MySQL Codec (Alpha)
+# Netty MySQL Codec (Alpha)
 
 Netty MySQL Codec provides Netty based MySQL/MariaDB encoders and decoders for use with both clients and servers.
-
-## TODO
-* TODO Test server side codec using MySQL/MariaDB JDBC driver
-* TODO Travis.ci testing against multiple versions of MySQL/MariaDB
-* TODO Create GitHub project
-* TODO GitHub road map
-* TODO Push up to GitHub
-* TODO Move to JUnit 5
-
 
 ## Implemented Features
 * Capability negotiation
@@ -24,8 +15,6 @@ Netty MySQL Codec provides Netty based MySQL/MariaDB encoders and decoders for u
 * Protocol level compression
 * Stored procedures
 * Replication protocols
-
-TODO Link to GitHub issues road map
 
 ## How to build
 
