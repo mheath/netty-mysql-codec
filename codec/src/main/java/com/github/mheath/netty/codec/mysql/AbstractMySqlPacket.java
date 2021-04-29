@@ -29,6 +29,6 @@ abstract class AbstractMySqlPacket implements MysqlPacket {
 
 	@Override
 	public int getSequenceId() {
-		return 0;
+		return this.sequenceId;
 	}
 }
